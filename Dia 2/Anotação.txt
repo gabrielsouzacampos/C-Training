@@ -1,0 +1,18 @@
+Dia 2: Tipos, Varáveis, Referências e Ponteiros
+	-> Como no C#, as variáveis são espaços na memória usados para armazenar valores, a diferença é que no C++ você tem acesso direto a esses endereços.
+	-> Com o operador & antes da variável, você consegue recuperar o endereço físico da memoria.
+
+	-> Um ponteiro é uma variável especial que armazena um endereço de memória ao invés de um valor direto.
+		-> O operador * é utilizado durante a declaração do tipo da variável para indicar que a mesma é um ponteiro.
+		-> O operador * utilizado na frente da variável do ponteiro recupera o valor que está armazenado na memoria
+		-> Um ponteiro pode não apontar para nada, e nesse caso ele é nulo. A melhor pratica é sempre inicializar os ponteiros.
+
+	-> Com o operador & utilizado no tipo da variável nós criamos uma referencia, é um apelido para um variável existente. Diferente do ponteiro ela nunca é nula e não precisa ser desreferencializada.
+		-> É útil em funções, evitando cópias desnecessárias.
+		-> Diferente do C#, em C++ as referencias são parte nativa da linguagem, não um modificador de parâmetro.
+
+	-> Quando você precisa alocar memória manualmente usa-se os operadores new e delete.
+		-> Em C++ nós somos responsáveis por liberar a memoria.
+
+	-> Referência significa acessar o endereço de uma variável.
+	-> Desreferência significa acessar o valor armazenado no endereço de memoria para o qual o ponteiro aponta.

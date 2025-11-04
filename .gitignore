@@ -1,0 +1,56 @@
+# Build artifacts
+*.o
+*.obj
+*.lo
+*.slo
+*.exe
+*.out
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.mod
+*.smod
+
+# Debugging and profiling files
+*.pdb
+*.ilk
+*.suo
+*.user
+*.ncb
+*.aps
+*.bsc
+*.sbr
+*.map
+*.ipch
+
+# Precompiled headers
+*.gch
+*.pch
+
+# IDE-specific files (e.g., Visual Studio)
+.vs/
+*.vcxproj.user
+*.filters
+*.sln.docstates
+*.VC.opendb
+*.VC.db
+
+# CMake build files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+# Editor-specific files (e.g., Vim, Emacs)
+*~
+*.swp
+.DS_Store
+
+# Log and temporary files
+*.log
+*.tmp
+temp/
+tmp/

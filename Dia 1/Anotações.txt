@@ -1,0 +1,9 @@
+Dia 1 - Estrutura e Compilação de Programas C++
+	-> Headers são como contratos (interfaces de implementação) e os arquivos .cpp são as implementações desse contrato.
+	-> Funcionamento do processo de building:
+		-> .cpp -> .obj -> linker -> .exe
+	-> A compilação acontece de forma individual para cara .cpp.
+	-> O compilador nunca compila o header, ele apenas o insere no .cpp que o implementa.
+	-> O linker pega todos os arquivos .obj e junta suas refêrencias e implementações para montar o executável final.
+	-> O comando #pragma once utilizado nos headers são utilizados para que o mesmo arquivo .h seja incluído e processado apenas uma vez durante a compilação. Sendo uma boa pratica adiciona-lo em todos.
+	
