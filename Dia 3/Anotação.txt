@@ -1,0 +1,12 @@
+Dia 3: Funções, Namespaces e Modularização
+	-> É uma boa pratica declarar as funções no arquivo de cabeçalho e implementa-las no arquivo fonte. Essa separação melhora a organização, reduz o tempo de compilação e favorece a reutilização.
+
+	-> O operador :: é o escopo de resolução que indica onde a função está definida.
+
+	-> É possível criar apelidos para os namespaces.
+
+	-> É possível utilizar o using para importar um namespace, porém a recomendação em projetos grandes é utilizar de forma explicita com o operador ::.
+	
+	-> Em C++ a modularização é feita combinando headers com os sources, cada par forma um módulo lógico. O compilador trata cada .cpp como unidade de tradução independente e o linker junta tudo.
+
+	-> O padrão namespace + headers + sources é a base de qualquer sistema C++ corporativo.

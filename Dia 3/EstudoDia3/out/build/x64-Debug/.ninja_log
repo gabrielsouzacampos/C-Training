@@ -1,0 +1,5 @@
+# ninja log v6
+6	210	7841656399270742	CMakeFiles/estudo_app.dir/src/main.cpp.obj	db1162af1b5582ee
+3	328	7841656399230630	CMakeFiles/financeiro_lib.dir/src/financeiro/Financeiro.cpp.obj	f64a57e3215ef37a
+328	381	7841656402494710	financeiro_lib.lib	9031b1f1518bbe17
+381	666	7841656402887139	estudo_app.exe	dc7c9aef653f80a8
