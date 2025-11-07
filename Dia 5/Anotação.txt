@@ -1,0 +1,19 @@
+Dia 5: Stack, Heap e Revisão Geral
+	-> Stack (Pilha)
+		-> Gerenciada automaticamente
+		-> Rápida, previsível e de tempo de vida curto
+		-> Objetos criados nela são destruídos automaticamente
+		-> Usar sempre que possível em objetos de vida curta e conhecidos em tempo de compilação
+
+	-> Heap
+		-> Gerenciada manualmente
+		-> Permite alocação dinâmica (em tempo de execução)
+		-> Use quando o tempo de vida do objeto precisa ultrapassar o escopo da função atual.
+
+	-> Smart Pointers
+		-> São wrappers que gerenciam automaticamente a liberação de memoria, eliminando o risco de delete esquecido.
+
+	-> RAII - Resource Acquisition is Initialization
+		-> O tempo de vida de um recurso deve estar atrelado ao tempo de vida de um objeto.
+		-> Quando o objeto é criado -> o recurso é adquirido (arquivo, memoria, conexão).
+		-> Quando o objeto é destruído -> o recurso é liberado automaticamente (via destrutor).
