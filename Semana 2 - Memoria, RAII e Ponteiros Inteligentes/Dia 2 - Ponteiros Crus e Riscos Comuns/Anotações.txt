@@ -1,0 +1,41 @@
+Risco 1 - Memory Leak
+	-> Ocorre quando faz o new mas nunca chama o delete. O valor continua na heap, inacessível fazendo o programa crescer em memoria a cada execução.
+
+Risco 2 - Dangling Pointer
+	-> Ocorre quando deleta a memoria e continua usando o ponteiro.
+
+Risco 3 - Double Free 
+	-> Ocorre quando deletamos mais de uma vez o ponteiro.
+
+Risco 4 - Falta de ownership claro
+
+Perguntas de Reflexão
+1- Por que usar ponteiros crus é perigoso mesmo quando "parece funcionar"?
+Resposta: Porque ele não possuem nenhum mecanismo automático de segurança. Eles são apenas endereços de memoria e nada mais.
+O compilador deixa você:
+	-> Criar memória com new;
+	-> Esquecer o delete;
+	-> Usar memória já deletada;
+	-> Deletar duas vezes;
+	-> Sobrescrever ponteiros;
+	-> Acessar áreas protegidas;
+	-> Corromper o heap interno;
+E tudo isso sem erro de compilação, sem warnings, sem avisos e muitas vezes o programa não crasha na hora. Ele continua rodando e explode depois, em um lugar totalmente diferente.
+
+2- Qual é a diferença entre um leak silencioso e um dangling pointer?
+Resposta: Os dois são perigosos de formas diferentes, o memory leak você perde a memória que nunca será recuperada. Já com o Dangling pointer o acesso é inválido e pode até crashar ou corromper o leak.
+
+3- Por que mesmo profissionais experientes evitam ponteiros crus?
+Resposta: Ninguem quer ser responsável por fazer diversos processos que em sistemas grandes são quase impossíveis de fazer corretamente, por isso o C++ moderno recomenda fortemente:
+	-> Não use new diretamente;
+	-> Não use delete diretamente;
+	-> Use RAII;
+	-> Use smart pointers;
+
+4- Como o RAII resolve 100% dos problemas vistos hoje?
+Resposta: Porque com o RAII:
+	-> Você não precisa chamar delete manualmente;
+	-> Você não esquece de liberar recursos;
+	-> Você não usa memoria após destruir;
+	-> Você não deleta duas vezes;
+	-> Você não cria ownerships confusos;
