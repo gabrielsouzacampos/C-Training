@@ -1,0 +1,10 @@
+Smart pointer é um objeto que age como um ponteiro, mas com gerenciamento automático de memoria. O unique_ptr é a solução que:
+	-> Previne vazamentos;
+	-> Previne dangling pointers;
+	-> Previne double delete;
+	-> Previne ownership confuso;
+	-> Funciona exatamente como RAII;
+
+E tudo isso com zero custo adicional. Em otimização, o compilador trata um unique_ptr como se fosse um ponteiro cru (mas seguro).
+
+O unique ownership define que o recurso deve conter exatamente um único dono. Não permitindo uma cópia, mas podendo mover para outra variável.
