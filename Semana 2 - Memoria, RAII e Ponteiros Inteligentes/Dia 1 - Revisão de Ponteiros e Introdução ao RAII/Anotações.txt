@@ -1,0 +1,14 @@
+Ownership
+	-> Quem é o responsável por liberar o recurso?
+	-> Precisamos de um padrão que associe o ciclo de vida do recurso do ciclo de vida de um objeto (é ai que entra o RAII).
+
+O que é RAII - Resource Acquisition Is Initialization
+	-> É um principio que garante que recursos sejam adquiridos no construtor e liberados no destrutor.
+		-> Quando o objeto é criado o recurso é adquirido
+		-> Quando o objeto sai de escopo o destrutor libera automaticamente o recurso.
+
+	-> Por que é melhor que o gerenciamento manual
+		-> Responsabilidade de liberação automática
+		-> Segurança garantida pelo destrutor
+		-> Exceções o destrutor sempre será chamado.
+		-> Estilo orientado a objeto
