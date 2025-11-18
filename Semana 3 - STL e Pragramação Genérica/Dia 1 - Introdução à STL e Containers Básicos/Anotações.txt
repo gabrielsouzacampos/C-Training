@@ -1,0 +1,29 @@
+O que é STL (Standard Template Library)?
+	-> É o pacote de ferramentas fundamental do C++ moderno.
+
+	-> É composta por 3 grandes grupos
+		-> Containers: estruturas que armazenam dados como vetores, arrays e listas.
+		-> Iteradores: objetos que percorrem containers como ponteiros inteligentes.
+		-> Algoritmos: funções genéricas otimizadas como sort, find e foreach.
+
+	-> Qualquer algoritmo funciona com qualquer container, contando que esse container implemente os iteradores corretos.
+
+Containers básicos: std::vector, std::array e std::list
+	-> std::vector
+		-> armazena elementos de forma continua na memoria
+		-> cresce dinamicamente
+		-> permite acesso rápido por índice
+		-> é extremamente eficiente para percorrer
+		-> funciona perfeitamente com algoritmos da STL
+
+	-> std::array
+		-> é um wrapper moderno para arrays fixos
+		-> o tamanho é conhecido em tempo de compilação
+		-> compatível com algoritmos STL
+		-> use quando o tamanho não muda e você quer performance máxima
+
+	-> std::list
+		-> cada item aponta para o anterior e o próximo
+		-> inserção e remoção rápidas no meio
+		-> acesso lento por índice
+		-> ótima para estruturas onde você manipula muito no meio
