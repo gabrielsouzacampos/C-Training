@@ -1,0 +1,31 @@
+O que são Associative Containers?
+	-> São containers que armazenam pares chave-valor ou valores únicos e permitem buscas rápidas por chave.
+
+std::map
+	-> Mantem as chaves ordenadas
+	-> Implementando como uma arvore rubro negra
+	-> Tempo de busca: O(log n)
+	-> Garantias fortes de ordenação
+
+std::unordered_map
+	-> Baseado em hash table
+	-> Não mantem ordem
+	-> Leituras, inserções e buscas rápidas: O(1) médio
+	-> É o default choise por ser mais rápido que o map
+
+std::set e std::unordered_set
+	-> São versões de map sem valores, contendo apenas chaves únicas
+	
+	-> std::set
+		-> Ordenado
+		-> Implementado como arvore 
+		-> Busca: O(log n)
+		-> Ideal quando você precisa de ordem + unicidade
+
+	-> std::unordered_set
+		-> Baseado em hash
+		-> Busca: O(1)
+		-> Ideal quando só importa verificar se existe ou não
+
+Iteradores
+	-> Funcionam como ponteiros mas de forma genérica.
