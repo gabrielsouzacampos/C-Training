@@ -1,0 +1,26 @@
+Shared_ptr
+	-> Um shared_ptr permite que vários ponteiros apontem para o mesmo objeto.
+	-> Ele funciona através de contagem de referencias, quando o count chega a 0 o objeto é destruído automaticamente.
+	-> Em C++ o shared_ptr não detecta ciclos sozinho, por isso existe o weak_ptr.
+
+Weak_ptr
+	-> Ele não aumenta a contagem de referencias, serve apenas para observar um shared_ptr sem ser dono.
+	-> É usado para:
+		-> Quebrar ciclos;
+		-> Acessar objetos compartilhados sem ownership.
+		-> Evitar leaks em grafos, arvores, entidades conectadas.
+
+Quando usar cada um?
+	-> unique_ptr
+		-> Ownership exclusivo
+		-> O mais eficiente
+		-> Use sempre que possível
+	-> shared_ptr
+		-> Ownership compartilhado
+		-> Quando o objeto precisa sobreviver a múltiplos donos
+		-> Ex: sistemas com cache, grafos e gerenciadores de recursos
+	-> weak_ptr
+		-> Para evitar ciclos em estruturas relacionais
+		-> Para observar sem possuir
+		-> Ex: eventos, listeners, grafos e entidades conectadas recursivamente
+
