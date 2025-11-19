@@ -1,0 +1,11 @@
+Os algoritmos não sabem e não se importam se você usa vector, list, map ou outro container. Eles manipulam iteradores, não containers. Essa separação da ao C++ grande flexibilidade e alta performance.
+
+Iteradores: o elo entre containers e algoritmos
+	-> Iteradores funcionam como ponteiros generalizados.
+	-> Para o algoritmo, basta que o container ofereça: 
+		-> begin()
+		-> end()
+	-> E eventualmente:
+		-> Random access (vector, array)
+		-> Bidirectional (list, map)
+		-> Forward (forward_list)
