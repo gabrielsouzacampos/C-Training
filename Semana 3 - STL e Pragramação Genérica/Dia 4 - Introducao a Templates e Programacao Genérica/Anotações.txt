@@ -1,0 +1,1 @@
+Um template é um “molde de código” que gera implementações concretas na compilação.
