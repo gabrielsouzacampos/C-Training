@@ -1,0 +1,19 @@
+Objetivo do C++ 11 foi:
+	-> Mais segurança;
+	-> Menos repetições;
+	-> Mais expressividade;
+	-> Ferramentas modernas (auto, lambdas, move, smart pointers, etc.)
+
+Quando usar auto?
+	-> O tipo é longo ou verboso;
+	-> O tipo é obvio no lado direito;
+	-> O tipo é dependente de templates;
+	-> Ao usar iteradores;
+	-> Ao usar lambdas;
+	-> Ao usar smart pointers;
+	-> Ao usar factory functions;
+
+Quando não usar auto?
+	-> Quando você quer fixar o tipo (exemplo double vs fixed);
+	-> Quando o valor literal é ambíguo;
+	-> Em códigos onde a legibilidade perde contexto;
