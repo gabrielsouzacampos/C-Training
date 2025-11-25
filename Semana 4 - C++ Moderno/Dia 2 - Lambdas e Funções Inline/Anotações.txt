@@ -1,0 +1,3 @@
+Lambda expression é uma função anonima e inline.
+
+Em C++, lambdas não criam objetos no heap, a menos que você capture algo pesado. Elas são altamente otimizadas.
