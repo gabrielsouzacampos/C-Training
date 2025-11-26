@@ -1,0 +1,4 @@
+Constexpr significa o valor pode (ou deve) ser calculado em tempo de compilação, ou seja o compilador faz o trabalho antes do sistema rodar.
+	-> Pode ser executada em tempo de execução ou compilação.
+	-> Deve ter corpo simples.
+	-> Todas as suas entradas devem ser constantes para gerar uma constante.

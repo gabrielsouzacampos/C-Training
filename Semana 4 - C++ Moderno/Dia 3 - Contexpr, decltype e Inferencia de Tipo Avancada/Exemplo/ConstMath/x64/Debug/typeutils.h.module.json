@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\TypeUtils.h.obj",
+            "outputs": [
+                "D:\\Projetos\\C++\\Semana 4 - C++ Moderno\\Dia 3 - Contexpr, decltype e Inferencia de Tipo Avancada\\Exemplo\\x64\\Debug\\ConstMath.pdb",
+                "x64\\Debug\\",
+                "D:\\Projetos\\C++\\Semana 4 - C++ Moderno\\Dia 3 - Contexpr, decltype e Inferencia de Tipo Avancada\\Exemplo\\ConstMath\\x64\\Debug\\TypeUtils.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "TypeUtils.h",
+                    "source-path": "d:\\projetos\\c++\\semana 4 - c++ moderno\\dia 3 - contexpr, decltype e inferencia de tipo avancada\\exemplo\\constmath\\typeutils.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
