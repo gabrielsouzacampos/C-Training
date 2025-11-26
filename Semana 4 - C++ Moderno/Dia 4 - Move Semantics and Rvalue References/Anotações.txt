@@ -1,0 +1,15 @@
+LValue
+	-> Algo que tem endereço e sobrevive após a expressão.
+	
+RValue
+	-> Um valor temporário, sem nome.
+	-> Permitem que você escreva funções que tratam temporários de forma eficiente.
+	
+O papel do std::move
+	-> Realiza uma conversão
+	-> Deixa o código mais rápido.
+	-> Reduz alocação.
+	-> Melhora o uso de memória
+	-> Torna push/pop/resize muito mais eficientes.
+	-> Após o move o objeto fica valido, porém vazio.
+	-> Temporários são movidos automaticamente.
