@@ -19,18 +19,20 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ICobranca.h" />
     <ClInclude Include="IImposto.h" />
-    <ClInclude Include="IImpostoSimples.h" />
-    <ClInclude Include="ServicoVenda.h" />
+    <ClInclude Include="INotificacao.h" />
+    <ClInclude Include="IPersistenciaPedido.h" />
+    <ClInclude Include="Pedido.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="IImpostoSimples.cpp" />
+    <ClCompile Include="Generico.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{96d258d7-3822-455e-b897-c5ec48687978}</ProjectGuid>
-    <RootNamespace>Imposto</RootNamespace>
+    <ProjectGuid>{f2cb8db2-2dae-43d8-8add-5a5d110d58a1}</ProjectGuid>
+    <RootNamespace>Dominio</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

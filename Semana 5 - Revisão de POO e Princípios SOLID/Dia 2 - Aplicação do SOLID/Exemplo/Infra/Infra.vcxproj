@@ -19,18 +19,37 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IImposto.h" />
-    <ClInclude Include="IImpostoSimples.h" />
-    <ClInclude Include="ServicoVenda.h" />
+    <ClInclude Include="CobrancaPix.h" />
+    <ClInclude Include="EmailNotificacao.h" />
+    <ClInclude Include="ImpostoSimples.h" />
+    <ClInclude Include="PedidoRepositorioMemoria.h" />
+    <ClInclude Include="PushNotificacao.h" />
+    <ClInclude Include="SMSNotificacao.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="IImpostoSimples.cpp" />
+    <ClCompile Include="CobrancaCartao.cpp" />
+    <ClCompile Include="CobrancaPix.cpp" />
+    <ClCompile Include="EmailNotificacao.cpp" />
+    <ClCompile Include="ImpostoProgressivo.cpp" />
+    <ClCompile Include="ImpostoSimples.cpp" />
+    <ClCompile Include="PedidoRepositorioArquivo.cpp" />
+    <ClCompile Include="PedidoRepositorioMemoria.cpp" />
+    <ClCompile Include="PushNotificacao.cpp" />
+    <ClCompile Include="SMSNotificacao.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.vcxproj">
+      <Project>{f2cb8db2-2dae-43d8-8add-5a5d110d58a1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicos\Servicos.vcxproj">
+      <Project>{53df2823-240a-45bf-bd3c-a9a7a2106831}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{96d258d7-3822-455e-b897-c5ec48687978}</ProjectGuid>
-    <RootNamespace>Imposto</RootNamespace>
+    <ProjectGuid>{705c9424-dbd8-4fbe-b0a2-a6b7fb0a65f4}</ProjectGuid>
+    <RootNamespace>Infra</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

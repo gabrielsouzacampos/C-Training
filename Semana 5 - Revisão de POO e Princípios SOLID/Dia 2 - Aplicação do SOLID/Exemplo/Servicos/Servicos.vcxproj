@@ -19,18 +19,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IImposto.h" />
-    <ClInclude Include="IImpostoSimples.h" />
-    <ClInclude Include="ServicoVenda.h" />
+    <ClInclude Include="ServicoPedido.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="IImpostoSimples.cpp" />
+    <ClCompile Include="ServicoPedido.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.vcxproj">
+      <Project>{f2cb8db2-2dae-43d8-8add-5a5d110d58a1}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{96d258d7-3822-455e-b897-c5ec48687978}</ProjectGuid>
-    <RootNamespace>Imposto</RootNamespace>
+    <ProjectGuid>{53df2823-240a-45bf-bd3c-a9a7a2106831}</ProjectGuid>
+    <RootNamespace>Servicos</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
