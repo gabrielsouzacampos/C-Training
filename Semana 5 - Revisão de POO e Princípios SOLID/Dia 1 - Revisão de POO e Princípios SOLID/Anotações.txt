@@ -1,0 +1,7 @@
+Revisão:
+	-> S (Single Responsibility Principle): uma classe deve ter um único motivo para mudar.
+	-> O (Open/Closed Principle): classes devem estar abertas para extensão e fechadas para modificação.
+	-> L (Liskov Substitution Principle): derivados devem se comportar como seus pais.
+	-> I (Interface Segregation Principle): evite interfaces grandes demais.
+	-> D (Dependency Inversion Principle): dependa de abstrações e não de implementações.
+	
