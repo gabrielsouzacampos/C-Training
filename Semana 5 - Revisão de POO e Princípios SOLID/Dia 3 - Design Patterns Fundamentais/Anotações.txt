@@ -1,0 +1,26 @@
+Design Patterns
+	-> Não existe reflection; tudo é explícito
+	-> Polimorfismo funciona via ponteiros/referências
+	-> unique_ptr e shared_ptr são muito usados para factories
+	-> Observer precisa ser manual (não existe event nativo como no C#)
+	-> Funções virtuais são essenciais
+
+FACTORY METHOD — Criação flexível de objetos
+	-> Quando usar?
+		-> Quando você quer criar objetos sem acoplamento ao tipo concreto
+		-> Quando a classe “decide” qual implementação criar
+		-> Quando precisa de extensibilidade
+
+STRATEGY — Substituir comportamentos dinamicamente
+	-> Quando usar?
+		-> Quando precisa trocar comportamento em tempo de execução
+		-> Quando várias regras diferentes devem ser aplicadas
+		-> Quando quer seguir OCP (aberto para extensão)
+
+OBSERVER — Comunicação 1→N
+	-> Quando usar?
+		-> Eventos notificando múltiplos interessados
+		-> Logging
+		-> Sistema de UI
+		-> Monitoramento de mudanças
+		-> Mecânica de sistema (ex: “quando pagamento é processado, notificar...”)
