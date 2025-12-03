@@ -1,0 +1,7 @@
+Testabilidade depende fortemente do design:
+	-> Interfaces bem definidas
+	-> Classes pequenas
+	-> Baixo acoplamento
+	-> Injeção explícita de dependências (por referência ou ponteiro)
+	-> Nenhuma dependência global
+	-> Nenhum “new” dentro de classes de alto nível
